@@ -13,4 +13,27 @@
 
 Route::get('/', function () {
     return view('welcome');
+
+
 });
+
+
+    Route::get('Calculo/{val1}/{val2}', function ($val1, $val2){
+    	$sum = $val1 + $val2;
+
+    	return $sum;
+
+
+
+    });
+
+
+
+
+Route::get('condicion/{a}', 'CondicionController@condicion');
+
+
+Route::get('profile/{nombre}/{edad}', 'ProfileController@profile');
+
+
+Route::get('Maquillaje/{tipo}/{color}/{precio}', 'MakeupController@index');

@@ -57,52 +57,7 @@
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
-                text-transform: uppercase;<?php<?php<?php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-class ProfileController extends Controller
-{
-    public function profile($edad, $nombre){
-        return view('profile', [
-        'edad' => $edad,
-        'nombre' => $nombre,
-    ]);
-    }
-}
-
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-class ProfileController extends Controller
-{
-    public function profile($edad, $nombre){
-        return view('profile', [
-        'edad' => $edad,
-        'nombre' => $nombre,
-    ]);
-    }
-}
-
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-class ProfileController extends Controller
-{
-    public function profile($edad, $nombre){
-        return view('profile', [
-        'edad' => $edad,
-        'nombre' => $nombre,
-    ]);
-    }
-}
-
+                text-transform: uppercase;
             }
 
             .m-b-md {
@@ -128,17 +83,11 @@ class ProfileController extends Controller
 
             <div class="content">
                 <div class="title m-b-md">
-                    Diana
+                    Perfil de Usuario
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div>
+                	<p><?php echo "edad: " . $edad; ?></p>
+                	<p><?php echo "nombre: " . $nombre; ?></p>
                 </div>
             </div>
         </div>
