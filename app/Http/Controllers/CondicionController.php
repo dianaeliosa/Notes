@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class CondicionController extends Controller
 {
+
+
+
     public function condicion($a){
 
     	$val = "";
@@ -24,8 +27,6 @@ class CondicionController extends Controller
 
     	return view('condicion',[
     		"a" => $val
-	
-
 		]);
     }
 }

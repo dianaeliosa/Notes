@@ -1,20 +1,24 @@
 @extends('layouts.app')
 
-@section('tab-title', 'Condicion')
+@section('tab-title', 'Maquillaje')
 
 @section('content')
 
-<div class="title m-b-md">
-        Condicion
+    <div class="title m-b-md">
+        Maquillaje
     </div>
 
      <div>
-        <p> {{  $a }} </p>
+        <p> {{  $tipo }} </p>
+        <p> {{  $color }} </p>
+        <p> {{  $precio }} </p>
+
      </div>
-
-
+  
   <span class="badge badge-primary">asdasd</span>
   <span class="badge badge-primary">asdasd</span>
   <span class="badge badge-primary">asdasd</span>
 
 @endsection
+
+

@@ -1,95 +1,30 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('tab-title', 'Perfil de usuario')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('content')
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;Laravel developmentLaravel development server started: <http://127.0.0.1:8000>
- server started: <http://127.0.0.1:8000>
+<div class="title m-b-md">
+        Perfil de Usuario
+    </div>
 
-                margin: 0;
-            }
+     <div>
+        <p> {{  $edad }} </p>
+        <p> {{  $nombre }} </p>
+    </div>
 
-            .full-height {
-                height: 100vh;
-            }
+    <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+  <div class="alert alert-danger">
+    
+    Error alert
 
-            .position-ref {
-                position: relative;
-            }
+  </div>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+  <span class="badge badge-primary">asdasd</span>
+  <span class="badge badge-primary">asdasd</span>
+  <span class="badge badge-primary">asdasd</span>
 
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Perfil de Usuario
-                </div>
-                <div>
-                	<p><?php echo "edad: " . $edad; ?></p>
-                	<p><?php echo "nombre: " . $nombre; ?></p>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@endsection

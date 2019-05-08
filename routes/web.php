@@ -36,4 +36,4 @@ Route::get('condicion/{a}', 'CondicionController@condicion');
 Route::get('profile/{nombre}/{edad}', 'ProfileController@profile');
 
 
-Route::get('Maquillaje/{tipo}/{color}/{precio}', 'MakeupController@index');
+Route::get('maquillaje/{tipo}/{color}/{precio}', 'MakeupController@maquillaje');
